@@ -16,8 +16,16 @@ h1{
 }
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     background-color: #1B244A;
+    align-items: center;
+}
+@media(min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
 
 .player-name{
